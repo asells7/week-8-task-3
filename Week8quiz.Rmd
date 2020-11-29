@@ -1,0 +1,32 @@
+---
+title: "206 Week 8 Quiz Problems"
+author: "Alison Sells"
+date: "11/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(effsize)
+```
+1. T test
+# Create a vector
+# then T test
+```{r}
+soil_a <- c(2.4, 3.1, 0.9, 8.6, 5.2, 5.4, 4.7)
+soil_b <- c(7.1, 9.2, 4.5, 6.4, 2.9, 11.6, 8.7)
+
+t.test(soil_a,soil_b)
+```
+
+
+```{r}
+cohen.d(soil_a, soil_b, na.rm = TRUE)
+```
+9. Linear Model
+
+```{r}
+2.56 + 0.28*(1.4) 
+```
+
